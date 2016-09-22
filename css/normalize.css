@@ -68,6 +68,13 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
+<audio id="demo" src="audio/disco.mp3"></audio>
+<div>
+  <button onclick="document.getElementById('demo').play()">Reproducir el Audio</button>
+  <button onclick="document.getElementById('demo').pause()">Pausar el Audio</button>
+  <button onclick="document.getElementById('demo').volume+=0.1">Aumentar el Volumen</button>
+  <button onclick="document.getElementById('demo').volume-=0.1">Disminuir el Volumen</button>
+</div>
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
